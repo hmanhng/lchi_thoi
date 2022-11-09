@@ -1,0 +1,8 @@
+#!/bin/bash
+
+git add --all .
+echo -n "Write your commit comment: "
+read -r input
+git commit -m "$input"
+git push -u origin master
+echo "###################    Git Push Done      ######################"
